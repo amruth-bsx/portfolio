@@ -3,14 +3,8 @@
    Modern Sage + Cream + Coral Theme
    ========================================================= */
 
-
-/* =========================================================
-   1. ROOT VARIABLES
-   ========================================================= */
-
+/* 1. ROOT VARIABLES */
 :root {
-
-    /* Main colours */
     --background: #f3f0e8;
     --background-soft: #ebe7dc;
     --card: #faf8f1;
@@ -29,143 +23,16 @@
 
     --border: rgba(32, 37, 31, 0.12);
 
-    /* Shadows */
     --shadow-small: 0 8px 25px rgba(32, 37, 31, 0.08);
     --shadow-large: 0 25px 60px rgba(32, 37, 31, 0.12);
 
-    /* Typography */
     --heading-font: Georgia, "Times New Roman", serif;
     --body-font: Arial, Helvetica, sans-serif;
 
-    /* Layout */
     --max-width: 1150px;
 }
 
-
-/* =========================================================
-   2. RESET
-   ========================================================= */
-
+/* 2. RESET */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: var(--body-font);
-    background: var(--background);
-    color: var(--dark);
-    line-height: 1.6;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-ul,
-ol {
-    list-style-position: inside;
-}
-
-
-/* =========================================================
-   3. GLOBAL CONTAINER
-   ========================================================= */
-
-.container {
-    width: min(92%, var(--max-width));
-    margin: auto;
-}
-
-
-/* =========================================================
-   4. HEADER / NAVIGATION
-   ========================================================= */
-
-.site-header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-
-    background: rgba(243, 240, 232, 0.88);
-
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-
-    border-bottom: 1px solid var(--border);
-}
-
-.navbar {
-    min-height: 75px;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logo {
-    width: 48px;
-    height: 48px;
-
-    display: grid;
-    place-items: center;
-
-    background: linear-gradient(135deg, var(--sage), var(--coral));
-
-    color: white;
-
-    border-radius: 14px;
-
-    font-weight: bold;
-
-    box-shadow: var(--shadow-small);
-
-    transition:
-        transform 0.3s ease,
-        border-radius 0.3s ease;
-}
-
-.logo:hover {
-    transform: rotate(-5deg) scale(1.08);
-    border-radius: 50%;
-}
-
-.nav-links {
-    display: flex;
-    gap: 28px;
-
-    list-style: none;
-}
-
-.nav-links a {
-    font-size: 14px;
-    font-weight: 600;
-
-    position: relative;
-
-    transition: color 0.3s ease;
-}
-
-.nav-links a::after {
-    content: "";
-
-    position: absolute;
-
-    width: 0;
-    height: 2px;
-
-    left: 0;
-    bottom: -7px;
-
-    background: var(--coral);
-
-    transition: width 0.3s ease;
-}
-
-.nav-lin
